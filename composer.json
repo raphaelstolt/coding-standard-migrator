@@ -1,6 +1,6 @@
 {
     "name": "stolt/coding-standard-migrator",
-    "description": "Migrates PHP coding-standard configurations between tools, starting with PHP-CS-Fixer to Mago.",
+    "description": "A CLI tool and library which migrates a PHP coding-standard configuration to a Mago based one.",
     "keywords": [
         "coding-standard",
         "php-cs-fixer",
