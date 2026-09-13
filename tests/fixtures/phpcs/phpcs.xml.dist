@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ruleset name="Fixture">
+    <description>A ruleset covering the shapes the reader has to deal with.</description>
+
+    <file>src</file>
+    <file>tests</file>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <arg name="tab-width" value="4"/>
+    <arg name="colors"/>
+    <config name="php_version" value="80300"/>
+
+    <rule ref="PSR12"/>
+    <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="false"/>
+            <property name="ignoreIndentationTokens" type="array">
+                <element value="T_COMMENT"/>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Commenting.Todo">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
+        <severity>5</severity>
+    </rule>
+
+    <rule ref="Generic">
+        <exclude name="Generic.PHP.LowerCaseKeyword"/>
+    </rule>
+
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+</ruleset>

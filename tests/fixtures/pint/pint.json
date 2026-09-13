@@ -1,0 +1,19 @@
+{
+    "preset": "psr12",
+    "rules": {
+        "single_quote": true,
+        "concat_space": {
+            "spacing": "one"
+        },
+        "yoda_style": true,
+        "no_trailing_whitespace": true,
+        "header_comment": {
+            "header": "Anything"
+        },
+        "native_function_invocation": true,
+        "php_unit_strict": false
+    },
+    "exclude": [
+        "storage"
+    ]
+}
