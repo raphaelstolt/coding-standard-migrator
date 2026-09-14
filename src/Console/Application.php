@@ -12,7 +12,7 @@ use Symfony\Component\Console\Application as BaseApplication;
 
 final class Application extends BaseApplication
 {
-    public const string NAME = 'coding-standard-migrator';
+    public const string NAME = 'cs-migrator';
 
     public const string VERSION = '0.1.0';
 

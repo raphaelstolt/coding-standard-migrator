@@ -54,7 +54,7 @@ See how much of the configuration of the current directory a migration would car
 over, before running one:
 
 ``` bash
-vendor/bin/coding-standard-migrator analyze
+vendor/bin/cs-migrator analyze
 ```
 
 ``` console
@@ -89,20 +89,20 @@ a manual decision, or `--fail-under 80` to turn the confidence into a CI gate.
 Migrate the PHP-CS-Fixer configuration of the current directory to a `mago.toml`:
 
 ``` bash
-vendor/bin/coding-standard-migrator migrate
+vendor/bin/cs-migrator migrate
 ```
 
 Migrate a PHP_CodeSniffer ruleset or a Pint configuration instead:
 
 ``` bash
-vendor/bin/coding-standard-migrator migrate --from phpcs
-vendor/bin/coding-standard-migrator migrate --from pint
+vendor/bin/cs-migrator migrate --from phpcs
+vendor/bin/cs-migrator migrate --from pint
 ```
 
 Preview the migration without writing anything:
 
 ``` bash
-vendor/bin/coding-standard-migrator migrate --dry-run
+vendor/bin/cs-migrator migrate --dry-run
 ```
 
 ``` console

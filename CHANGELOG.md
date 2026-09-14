@@ -5,6 +5,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the ch
 
 ## [Unreleased]
 
+## [v0.1.1] - 2026-09-14
+
+### Changed
+
+- Renamed `coding-standard-migrator` binary to `cs-migrator`.
+
 ## v0.1.0 - 2026-09-13
 
 ### Added
@@ -33,3 +39,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the ch
   reader and a rule table.
 - A `php-version` which falls back to the version the source standard was configured
   for, when `--php-version` is not given.
+
+[Unreleased]: https://github.com/raphaelstolt/coding-standard-migrator/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/raphaelstolt/coding-standard-migrator/compare/v0.1.0...v0.1.1

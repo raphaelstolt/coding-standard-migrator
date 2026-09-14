@@ -42,7 +42,7 @@
         }
     },
     "bin": [
-        "bin/coding-standard-migrator"
+        "bin/cs-migrator"
     ],
     "config": {
         "sort-packages": true

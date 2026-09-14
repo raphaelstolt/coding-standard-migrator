@@ -5,7 +5,8 @@
 * export-ignore
 
 bin/ -export-ignore
-bin/coding-standard-migrator -export-ignore
+bin/cs-migrator -export-ignore
 composer.json -export-ignore
+LICENSE.md -export-ignore
 src/ -export-ignore
 src/** -export-ignore
