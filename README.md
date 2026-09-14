@@ -28,6 +28,20 @@ and not a finished configuration. Every migration therefore comes with a report 
 states what was translated, what the target standard does implicitly, and which rules
 need a manual decision.
 
+## Why Coding Standard Migrator?
+
+Moving from PHP-CS-Fixer, PHP_CodeSniffer, or Pint to Mago is not just a configuration-file rename.
+
+Different tools expose different rule sets and semantics.
+
+Coding Standard Migrator makes that migration explicit:
+
+1. analyze what can be migrated
+2. identify gaps
+3. generate a Mago configuration
+4. review the migration report
+5. verify the result with Mago
+
 ## Installation
 
 ``` bash
