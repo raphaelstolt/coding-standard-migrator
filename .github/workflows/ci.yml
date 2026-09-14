@@ -45,6 +45,9 @@ jobs:
         with:
           dependency-versions: ${{ matrix.dependencies }}
 
+      - name: Run dist validation
+        run: composer validate-gitattributes
+
       - name: Run static analysis
         run: composer static-analysis
 

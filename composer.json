@@ -29,7 +29,8 @@
     "require-dev": {
         "carthage-software/mago": "^1.48.1",
         "phpstan/phpstan": "^2.1",
-        "phpunit/phpunit": "^11.5 || ^12.0"
+        "phpunit/phpunit": "^11.5 || ^12.0",
+        "stolt/lean-package-validator": "^6.0"
     },
     "autoload": {
         "psr-4": {
@@ -51,6 +52,7 @@
         "test": "phpunit",
         "test-with-coverage": "phpunit --coverage-html coverage-reports",
         "static-analysis": "phpstan analyse --ansi",
+        "validate-gitattributes": "./vendor/bin/lean-package-validator validate",
         "cs-lint": [
             "mago format --check",
             "mago lint"
@@ -59,7 +61,8 @@
         "ci": [
             "@cs-lint",
             "@static-analysis",
-            "@test"
+            "@test",
+            "@validate-gitattributes"
         ]
     },
     "scripts-descriptions": {
@@ -68,6 +71,7 @@
         "static-analysis": "Runs a static analysis on the source code.",
         "cs-lint": "Checks the code for coding-standard violations.",
         "cs-fix": "Fixes the coding-standard violations which can be fixed automatically.",
-        "ci": "Runs all checks which are also run in CI."
+        "ci": "Runs all checks which are also run in CI.",
+        "validate-gitattributes": "Validates the .gitattributes file."
     }
 }
