@@ -42,6 +42,13 @@ Coding Standard Migrator makes that migration explicit:
 4. review the migration report
 5. verify the result with Mago
 
+## What the Coding Standard Migrator does not do
+
+The `Coding Standard Migrator` does not guarantee behavioural equivalence.
+
+It translates configuration where a known Mago equivalent exists and explicitly reports mappings that require a manual
+review.
+
 ## Installation
 
 ``` bash
@@ -51,7 +58,7 @@ composer require --dev stolt/coding-standard-migrator
 ## Usage
 
 See how much of the configuration of the current directory a migration would carry
-over, before running one:
+ over before running one:
 
 ``` bash
 vendor/bin/cs-migrator analyze
