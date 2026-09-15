@@ -148,6 +148,44 @@ Mapped rules
 The command is also reachable as `analyse`. The supported standards and migration paths
 are listed by the `standards` command.
 
+## Usage via cpx
+
+If you don't want to add `coding-standard-migrator` as a development dependency, you can run it directly with [cpx](https://cpx.dev/).
+
+Install cpx globally:
+
+```bash
+composer global require cpx/cpx
+```
+
+Then run the migrator directly from your project:
+
+```bash
+cpx stolt/coding-standard-migrator analyze
+```
+
+To migrate your PHP-CS-Fixer configuration to Mago:
+
+```bash
+cpx stolt/coding-standard-migrator migrate
+```
+
+You can pass the same options as with the locally installed binary:
+
+```bash
+cpx stolt/coding-standard-migrator migrate --from pint
+cpx stolt/coding-standard-migrator migrate --from phpcs
+cpx stolt/coding-standard-migrator migrate --dry-run
+cpx stolt/coding-standard-migrator analyze --fail-under 80
+```
+
+cpx keeps the package isolated from your project's Composer dependencies, so you can use `coding-standard-migrator`
+without adding it to `composer.json`. It also caches the package between runs, making later invocations faster.
+
+> **Tip:** If `coding-standard-migrator` is already installed in your project, cpx can use the project's local binary
+> first. This makes `cpx stolt/coding-standard-migrator ...` convenient both for projects that have the tool installed
+> and for one-off migrations.
+
 ### Usage as a library
 
 ``` php
