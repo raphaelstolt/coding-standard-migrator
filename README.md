@@ -186,7 +186,7 @@ without adding it to `composer.json`. It also caches the package between runs, m
 > first. This makes `cpx stolt/coding-standard-migrator ...` convenient both for projects that have the tool installed
 > and for one-off migrations.
 
-### Usage as a library
+## Usage as a library
 
 ``` php
 use Stolt\CodingStandardMigrator\Migration\MigrationEngine;
