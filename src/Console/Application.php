@@ -14,7 +14,7 @@ final class Application extends BaseApplication
 {
     public const string NAME = 'cs-migrator';
 
-    public const string VERSION = '0.1.1';
+    public const string VERSION = '0.2.0';
 
     public function __construct(MigrationEngine $engine = new MigrationEngine())
     {
