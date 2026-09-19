@@ -24,13 +24,14 @@
         "ext-json": "*",
         "ext-libxml": "*",
         "ext-simplexml": "*",
-        "symfony/console": "^6.4 || ^7.0"
+        "symfony/console": "^6.4 || ^7.0 || ^8.0"
     },
     "require-dev": {
         "carthage-software/mago": "^1.48.1",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^11.5 || ^12.0",
-        "stolt/lean-package-validator": "^6.0"
+        "stolt/lean-package-validator": "^6.0",
+        "stolt/version-aligner": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -51,6 +52,7 @@
     "scripts": {
         "test": "phpunit",
         "test-with-coverage": "phpunit --coverage-html coverage-reports",
+        "version-check": "version-aligner check --format=json",
         "static-analysis": "phpstan analyse --ansi",
         "validate-gitattributes": "./vendor/bin/lean-package-validator validate",
         "cs-lint": [
@@ -59,6 +61,7 @@
         ],
         "cs-fix": "mago format",
         "ci": [
+            "@version-check",
             "@cs-lint",
             "@static-analysis",
             "@test",
@@ -72,6 +75,7 @@
         "cs-lint": "Checks the code for coding-standard violations.",
         "cs-fix": "Fixes the coding-standard violations which can be fixed automatically.",
         "ci": "Runs all checks which are also run in CI.",
-        "validate-gitattributes": "Validates the .gitattributes file."
+        "validate-gitattributes": "Validates the .gitattributes file.",
+        "version-check": "Checks the application version."
     }
 }
