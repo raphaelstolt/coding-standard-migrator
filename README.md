@@ -5,7 +5,7 @@
 ![Downloads](https://img.shields.io/packagist/dt/stolt/coding-standard-migrator)
 ![PHP Version](https://img.shields.io/badge/php-8.3+-ff69b4.svg)
 [![PDS Skeleton](https://img.shields.io/badge/pds-skeleton-blue.svg?style=flat)](https://github.com/php-pds/skeleton)
-[![Lean dist package](https://img.shields.io/badge/lean-dist%20package-00ffb6.svg?style=flat)](https://github.com/raphaelstolt/coding-standard-migrator)
+[![Lean dist package](https://img.shields.io/badge/lean-dist%20package-00ffb6.svg?style=flat)](https://github.com/raphaelstolt/lean-package-validator)
 
 <p align="center">
     <img src="logo.png" 
