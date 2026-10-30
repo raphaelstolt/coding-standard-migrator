@@ -301,6 +301,17 @@ migration path.
   of a Pint configuration nor the `<exclude-pattern>` elements of a PHP_CodeSniffer
   ruleset end up in Mago's `source.excludes`.
 
+## AI disclaimer
+
+This package is developed with the assistance of Artificial Intelligence (AI). AI tools are used throughout the development
+process, including code generation, documentation, testing, and maintenance.
+
+While reasonable care is taken to review and validate AI-generated contributions, AI-generated code is not inherently correct,
+secure, or free of defects. All contributions remain subject to human review and project quality standards.
+
+As with any software, use this package at your own risk. No guarantee is made regarding its fitness for a particular purpose,
+and the maintainers assume no liability for damages resulting from its use.
+
 ## Contributing
 
 If you're considering contributing to this library, have a look at this repository's [CONTRIBUTING.md](.github/CONTRIBUTING.md)
